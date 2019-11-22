@@ -1,0 +1,34 @@
+# FILMES
+# GET ALL
+GET http://localhost:3000/filmes
+###
+
+# FIND BY ID
+GET http://localhost:3000/filmes/12
+###
+
+# CREATE
+POST  http://localhost:3000/filmes
+content-type: application/json
+
+{
+  "titulo": "Teste",
+  "ano": "1111",
+  "diretor": "TESTE"
+}
+###
+
+# EDIT
+PUT  http://localhost:3000/filmes/12
+content-type: application/json
+
+{
+  "titulo": "Teste1",
+  "ano": "1112",
+  "diretor": "TESTE1"
+}
+###
+
+# DELETE
+DELETE   http://localhost:3000/filmes/12
+###
